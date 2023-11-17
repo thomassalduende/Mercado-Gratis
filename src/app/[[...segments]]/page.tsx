@@ -1,4 +1,4 @@
-import { ItemsList } from "@/components/ItemsList";
+import ItemsList from "@/components/ItemsList";
 import { api } from "@/service/api"
 
 export default async function ProductsPage({ params: { segments } }: { params: { segments?: string[] } }) {

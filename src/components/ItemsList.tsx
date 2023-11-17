@@ -1,15 +1,17 @@
-import Productos from "@/components/Productos";
-import { type Products } from "@/types/types";
+import React from 'react';
+import Productos from '@/components/Productos';
+import { Products } from '@/types/types';
 
-export async function ItemsList({ products }: { products: Products[] }) {
-
+const ItemsList = ({ products }: { products: Products[] }) => {
     return (
         <section>
-            <article className="grid gap-4">
+            <div className="grid gap-4">
                 {products && products.map((item) => (
                     <Productos key={item.id} item={item} />
                 ))}
-            </article>
+            </div>
         </section>
     );
-}
+};
+
+export default ItemsList;
