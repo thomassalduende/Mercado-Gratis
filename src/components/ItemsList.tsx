@@ -1,6 +1,4 @@
-import { api } from "@/service/api";
 import Productos from "@/components/Productos";
-import { ReactNode } from "react";
 import { type Products } from "@/types/types";
 
 export async function ItemsList({ products }: { products: Products[] }) {

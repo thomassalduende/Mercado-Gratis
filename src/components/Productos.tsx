@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Productos({ item }: { item: Products }) {
     return (
-        <>
+        <article key={item.id}>
             <hr />
             <Link href={`/items/${item.id}`} key={item.id} className="flex gap-4 ">
                 <img src={item.thumbnail} alt={item.title} />
@@ -14,6 +14,6 @@ export default function Productos({ item }: { item: Products }) {
                 </div>
                 <span className="ml-auto text-sm opacity-50 capitalize">{item.seller_address.city.name}</span>
             </Link>
-        </>
+        </article>
     )
 }

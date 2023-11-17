@@ -9,7 +9,7 @@ export default async function ItemsPageBusqueda({ searchParams }: { searchParams
         <section>
             <article className="grid gap-4">
                 {results.map((item) => (
-                    <Products item={item} />
+                    <Products item={item} key={item.id} />
                 ))}
             </article>
         </section>
